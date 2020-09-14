@@ -1,4 +1,10 @@
-<h1> "My name is <%= ["Richard", "Louis"].sample %>" </h1>
+<h1> "My name is <%= @name if @name.empty? %>" </h1>
 <div style='border: 9px dashed red'> 
  <img src='http://bit.ly/1eze8aE'>
  </div>
+
+<form action='/named_cat'>
+<input type="text" name="name">
+<input type="submit" value="Submit">
+
+</form>
